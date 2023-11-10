@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Meu Formulário Personalizado</title>
+    <link rel="stylesheet" type="text/css" href="css/styles-forms.css">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/estiloie.css">
+    <![endif]-->
+    
+
+  </head>
+<body>
+  
+    <form id="formulario" autocomplete="off">
+      <fieldset class="dados">
+        <legend class="legendaDados">Dados do paciente</legend>
+
+        <div class="nomeData">
+          <input class="nome" type="text" name="nome" placeholder="Nome:">
+          <input class="dataNascimento" type="date" name="dataNascimento" required>
+        </div>
+
+        <div class="idadeParceirosSexuais">
+          <label class="idadeSexual">Informe a idade que<br> você iniciou a vida sexual:</label>
+          <input class="inputIdadeSexual" type="number">
+        
+          <label class="parceirosSexuais">Número de parceiros<br> sexuais no último ano:</label>
+          <input class="inputParceirosSexuais" type="number">
+        </div>
+
+        <div class="anoMsg">
+          <label class="anoPapanicolaou">Ano dos 2 últimos<br> exames de Papanicolaou:</label>
+          <input class="inputAnoPapanicolaou" type="number">
+        
+          <label class="msg">Se souber<br> descreva o resultado:</label>
+          <textarea class="inputMsg" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="hpvFumanteHist">
+          <div class="question">
+            <label class="hpv">Possui vacina HPV?:</label>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="question">
+            <label class="fumante">Fuma a mais de 10 anos?:</label>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="question">
+            <label class="histerectomia">Fez Histerectomia?:</label>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>    
+            </label>  
+          </div>     
+        </div>
+        
+        <div class="contraDoenca">
+          <div class="question">
+            <label class="contraceptivo">Uso de contraceptivo oral?:</label>
+            <label class="switch">
+              <input type="checkbox" id="contraceptivoCheckbox">
+              <span class="slider round"></span> 
+            </label>
+          </div>        
+
+          <div class="question">
+            <label class="doençaSexual">Possui alguma doença sexualmente transmissível?:</label>
+            <label class="switch">
+              <input type="checkbox" id="doençaCheckbox">
+              <span class="slider round"></span> 
+            </label>
+          </div>         
+        </div>
+        
+        <div class="simDrop">
+          <div class="question" id="questionContracep">
+            <label class="simContraceptivo">Mais ou menos de 5 anos?:</label>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>  
+            </label>  
+          </div>      
+
+          <div id="doençaDropdown">
+            <select id="doenças" name="doenças">
+              <option value="">Informe aqui:</option>
+              <option value="doença1">HIV</option>
+              <option value="doença2">Herpes</option>
+              <option value="doença3">Cancro mole</option>
+              <option value="doença4">HPV</option>
+              <option value="doença5">Gonorréia</option>
+              <option value="doença6">Clamídia</option>
+              <option value="doença7">Linfogranuloma venéreo</option>
+              <option value="doença8">Sífilis</option>
+              <option value="doença9">Tricomoníase</option>
+            </select>
+          </div>
+            
+        </div>
+
+
+      </fieldset>
+
+      <fieldset class="endereço">
+        <legend class="legendaEndereco">Endereço do paciente</legend>
+
+        <div class="cepEstadoCidade">
+          <input id="txtCep" type="number" name="cep" placeholder="Cep:">
+
+          <input id="txtEstado" type="text" name="estado" placeholder="Estado:" value="SERGIPE" disabled="">
+
+          <input id="txtCidade" type="text" name="cidade" placeholder="Cidade:">
+        </div>
+
+        <div class="bairroRua">
+          <input id="txtBairro" type="text" name="bairro" placeholder="Bairro:">
+        
+          <input id="txtRua" type="text" name="rua" placeholder="Rua:">
+        </div>
+        
+      </fieldset>
+    </form>
+  <script type="text/javascript" src="js/cep.js"></script>
+  <script type="text/javascript" src="js/display.js"></script>
+</body>
+</html>

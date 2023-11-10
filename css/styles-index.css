@@ -1,0 +1,57 @@
+body{
+  background: linear-gradient(15.15deg, #df54f5 10%, #dba6f3 90%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  height: 0;
+  }
+
+.informacoes-gerais-do-exame{
+  display: block;
+  width: 45%;
+  height: 900px;
+  padding: 5;
+  box-sizing: content-box;
+  text-decoration: none;
+}
+
+.descricao-do-exame{
+  font-size: 21px;
+}
+
+.fazer-exame{
+  display: flex;
+  width: 45%;
+  height: 900px;
+  padding: 5;
+  box-sizing: content-box;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.enviar-informacoes{
+  display: flex;
+}
+
+.botao-clique-aqui{
+  width: 215px;
+  height: 35px;
+  border-radius: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  background: white;
+  transition: background 0.5s ease-in-out;
+}
+
+.botao-clique-aqui:hover{
+  background: #e4f688;
+}
